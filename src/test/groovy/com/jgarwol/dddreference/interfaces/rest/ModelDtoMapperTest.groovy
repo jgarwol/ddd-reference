@@ -19,7 +19,7 @@ class ModelDtoMapperTest extends Specification {
 
         then:
         makeDtoMapper.toMakeDto(model.getMake()) >> expectedMakeDto
-        with(modelDto){
+        with(modelDto) {
             it.make == expectedMakeDto
             it.name == model.name
         }

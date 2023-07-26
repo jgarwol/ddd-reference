@@ -1,14 +1,13 @@
 package com.jgarwol.dddreference.domain.car;
 
+import java.time.LocalDate;
 import lombok.Builder;
 import lombok.Getter;
-
-import java.time.LocalDate;
 
 @Getter
 @Builder
 public class Car {
-    Model model;
-    LocalDate productionDate;
+  Model model;
+  LocalDate productionDate;
 
 }

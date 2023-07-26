@@ -6,12 +6,12 @@ import lombok.Value;
 @Value
 @Builder
 public class Model {
-    Make make;
-    String name;
+  Make make;
+  String name;
 
-    public static Model of(Make make, String name) {
-        return new Model(make, name);
-    }
+  public static Model of(Make make, String name) {
+    return new Model(make, name);
+  }
 
 
 }

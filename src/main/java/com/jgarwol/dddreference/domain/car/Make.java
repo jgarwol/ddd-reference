@@ -6,8 +6,9 @@ import lombok.Value;
 @Value
 @Builder
 public class Make {
-    String name;
-    public static Make of(String name){
-        return new Make(name);
-    }
+  String name;
+
+  public static Make of(String name) {
+    return new Make(name);
+  }
 }

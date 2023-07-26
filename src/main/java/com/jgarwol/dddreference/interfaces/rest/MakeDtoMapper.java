@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MakeDtoMapper {
-    public MakeDto toMakeDto(Make make) {
-        return new MakeDto(make.getName());
-    }
+  public MakeDto toMakeDto(Make make) {
+    return new MakeDto(make.getName());
+  }
 }

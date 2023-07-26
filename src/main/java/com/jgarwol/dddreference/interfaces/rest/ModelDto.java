@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ModelDto {
-    MakeDto make;
-    String name;
+  MakeDto make;
+  String name;
 }

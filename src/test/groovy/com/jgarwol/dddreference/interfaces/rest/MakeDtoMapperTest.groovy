@@ -10,7 +10,7 @@ class MakeDtoMapperTest extends Specification {
     def "should convert make"() {
         def make = new Make("make name")
         expect:
-        with(mapper.toMakeDto(make)){
+        with(mapper.toMakeDto(make)) {
             name == make.name
         }
     }
