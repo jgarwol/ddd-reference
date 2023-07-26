@@ -3,6 +3,7 @@ plugins {
 	id 'groovy'
 	id 'checkstyle'
 	id "com.github.spotbugs" version "5.0.14"
+	id 'pmd'
 	id 'org.springframework.boot' version '3.1.2'
 	id 'io.spring.dependency-management' version '1.1.2'
 }
@@ -54,4 +55,8 @@ tasks.named('test') {
 
 spotbugsTest {
 	enabled = false
+}
+
+pmd {
+	sourceSets = [sourceSets.main]
 }
