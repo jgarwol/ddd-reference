@@ -58,6 +58,11 @@ spotbugsTest {
 	enabled = false
 }
 
+checkstyle {
+	ignoreFailures = false
+	maxWarnings = 0
+}
+
 pmd {
 	sourceSets = [sourceSets.main]
 }
